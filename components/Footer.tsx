@@ -23,6 +23,8 @@ const FooterColumn = ({title,links}:ColumnProps) =>(
 )
 
 
+
+
 const Footer = () => {
   return (
     <footer className='flexStart footer'>
@@ -49,6 +51,14 @@ const Footer = () => {
           <FooterColumn  title={footerLinks[6].title} links={footerLinks[6].links}/>
         </div>
 
+        <div >
+                    <Link  href="/about" >
+                      About
+                    </Link>
+            
+
+      </div>
+
         <div className='flexBetween footre_copyright border-t border-slate-400 pt-1'>
           <p>@ 2023 Flexible. All Right Reserved</p>
 
@@ -58,6 +68,8 @@ const Footer = () => {
 
 
       </div>
+
+      
 
     </footer>
   )
